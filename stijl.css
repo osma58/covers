@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+html {
+ font-family: 'Righteous', cursive;
+}
+html, body, div, article, p, ul, h3, h4{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+.cover {
+    width: 350px;
+    float: left;
+    margin: 1em;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+
+.cover article{
+    position: relative;
+    background-color: rgb(255, 255, 255, 0.5);
+    height: 350px;
+    font-size: .9em;
+    padding: 20px;
+    margin-top: 0;
+    animation: naarbeneden 2s forwards;
+    
+}
+
+.lang {
+    font-size: 8px;
+}
+
+.naarboven article {
+    animation: naarboven 1s forwards;
+
+}
+
+.naarbeneden article {
+    animation: naarboven 1s forwards;
+    
+}
+
+.cover:hover article {
+    
+}
+
+@-webkit-keyframes naarbeneden{
+    
+    
+    0% {margin-top: 0px}
+    37.5% {margin-top: 150px}
+    62.5% {margin-top: 225px}
+    87.5% {margin-top: 270px}
+    20%, 40%, 60%, 80%, 100% {margin-top: 300px}
+}
+@-moz-keyframes naarbeneden{
+    
+    
+    0% {margin-top: 0px}
+    37.5% {margin-top: 150px}
+    62.5% {margin-top: 225px}
+    87.5% {margin-top: 270px}
+    20%, 40%, 60%, 80%, 100% {margin-top: 300px}
+}
+@keyframes naarbeneden{
+    0% {margin-top: 0px}
+    37.5% {margin-top: 150px}
+    62.5% {margin-top: 225px}
+    87.5% {margin-top: 270px}
+    20%, 40%, 60%, 80%, 100% {margin-top: 300px}
+}
+@-webkit-keyframes naarboven{
+    0% {margin-top: 300px}
+    37.5% {margin-top: 150px}
+    62.5% {margin-top: 70px}
+    87.5% {margin-top: 20px}
+    20%, 40%, 60%, 80%, 100% {margin-top: 0px}
+}
+
+@-moz-keyframes naarboven{
+    
+    
+    0% {margin-top: 300px}
+    37.5% {margin-top: 150px}
+    62.5% {margin-top: 70px}
+    87.5% {margin-top: 20px}
+    20%, 40%, 60%, 80%, 100% {margin-top: 0px}
+}
+
+@keyframes naarboven{
+    0% {margin-top: 300pxpx}
+    37.5% {margin-top: 150px}
+    62.5% {margin-top: 70px}
+    87.5% {margin-top: 20px}
+    20%, 40%, 60%, 80%, 100% {margin-top: 0px}
+}
